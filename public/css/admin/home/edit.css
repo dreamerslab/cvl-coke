@@ -1,0 +1,18 @@
+/* line 1, ../../../../app/sass/admin/home/edit.sass */
+#admin-form {
+  width: 264px;
+  height: 97px;
+}
+
+/* line 5, ../../../../app/sass/admin/home/edit.sass */
+#file-left-wrap {
+  position: absolute;
+  z-index: 3;
+  top: 13px;
+  left: 13px;
+}
+
+/* line 11, ../../../../app/sass/admin/home/edit.sass */
+#confirm-btn, #cancel-link {
+  left: 216px;
+}

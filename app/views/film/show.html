@@ -1,0 +1,24 @@
+<? it.styles.push( 'film' ); ?>
+
+<div id="gallery">
+  <h2 id="gallery-title">Gallery</h2>
+  <div id="film-nav">
+    <video id="film-video" controls>
+      <source src="<?= CONF.static_host + it.video.url1 ?>" type="video/mp4">
+      <source src="<?= CONF.static_host + it.video.url2 ?>" type="video/webm">
+    </video>
+
+    <ul id="thumbnails">
+      <? it.covers.forEach( function ( cover ){ ?>
+        <li>
+          <a class="thumb-item" href="/film/<?= cover.page ?>" title="Click to switch films">
+            <img class="thumb-img" src="<?= CONF.static_host + cover.url ?>" alt="Film Cover"/>
+          </a>
+        </li>
+      <? }); ?>
+    </ul>
+
+    <?= it.film_pre_pager(  it.current_page, '/film' ) ?>
+    <?= it.film_next_pager( it.current_page, '/film', it.current_pages ) ?>
+  </div>
+</div>

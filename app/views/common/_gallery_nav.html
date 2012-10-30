@@ -1,0 +1,29 @@
+<? var prefix = it.url_prefix.replace( /\d+$/, '' ); ?>
+
+<div id="gallery-nav">
+  <div id="gallery-nav-pages">
+    <div id="gallery-pager">
+      <!-- run the previois and next page helper here -->
+      <?= it.pre_pager( it.current_page, prefix )?>
+      <?= it.next_pager( it.current_page, prefix, it.current_pages )?>
+    </div>
+
+    <? for( var i = 1; i <= it.current_pages; i++ ){ ?>
+    <a class="gallery-nav-item <?= it.selected( i, it.current_page ) ?>" href="<?= prefix + i ?>">
+      <?= i ?>
+    </a>
+    <? } ?>
+
+  </div>
+  <div id="gender-type">
+    <a id="<?= it.types[ 0 ] ?>"
+      class="<?= it.selected( it.types[ 0 ], it.type ) ?>"
+      title="Switch to <?= it.types[ 0 ].toUpperCase() ?>"
+      href="<?= it.type_link( it.namespace, it.album_prefix, it.types[ 0 ], it.type, it.current_page )?>"><?= it.types[ 0 ].toUpperCase() ?></a>
+    <span id="swith-seperator">|</span>
+    <a id="<?= it.types[ 1 ] ?>"
+      class="<?= it.selected( it.types[ 1 ], it.type ) ?>"
+      title="Switch to <?= it.types[ 1 ].toUpperCase() ?>"
+      href="<?= it.type_link( it.namespace, it.album_prefix, it.types[ 1 ], it.type, it.current_page )?>"><?= it.types[ 1 ].toUpperCase() ?></a>
+  </div>
+</div>

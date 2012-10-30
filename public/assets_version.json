@@ -1,0 +1,21 @@
+{
+  "css": {
+    "admin-show": "VDDPwQiAwkYyEjU1KBgaySKDx2IpiyMV",
+    "admin-home-edit": "VDDPwQiAwkYyEjU1KBgaySKDx2IpiyMV",
+    "admin-new-and-edit": "VDDPwQiAwkYyEjU1KBgaySKDx2IpiyMV",
+    "admin-del-confirm": "VDDPwQiAwkYyEjU1KBgaySKDx2IpiyMV",
+    "common": "VDDPwQiAwkYyEjU1KBgaySKDx2IpiyMV",
+    "error": "zwiqIu7iLwZqYtO69hlKgeyRoq6GRRjd",
+    "film": "VDDPwQiAwkYyEjU1KBgaySKDx2IpiyMV",
+    "admin-film": "VDDPwQiAwkYyEjU1KBgaySKDx2IpiyMV",
+    "admin-film-new-and-edit": "VDDPwQiAwkYyEjU1KBgaySKDx2IpiyMV",
+    "admin-film-del-confirm": "VDDPwQiAwkYyEjU1KBgaySKDx2IpiyMV",
+    "photographer": "VDDPwQiAwkYyEjU1KBgaySKDx2IpiyMV",
+    "contact": "VDDPwQiAwkYyEjU1KBgaySKDx2IpiyMV",
+    "sessions": "zwiqIu7iLwZqYtO69hlKgeyRoq6GRRjd"
+  },
+  "js": {
+    "common": "VDDPwQiAwkYyEjU1KBgaySKDx2IpiyMV",
+    "upload": "VDDPwQiAwkYyEjU1KBgaySKDx2IpiyMV"
+  }
+}

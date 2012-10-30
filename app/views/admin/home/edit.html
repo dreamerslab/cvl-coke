@@ -1,0 +1,25 @@
+<? it.title = 'Edit banner | Coverline'; ?>
+<? it.styles.push( 'photographer' ); ?>
+<? it.styles.push( 'admin-home-edit' ); ?>
+<? it.scripts.push( 'upload' ); ?>
+<? it.admin_nav_selected = 'edit'; ?>
+
+<form id="admin-form" action="/admin" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
+  <input type="hidden" name="_method" value="put" />
+  <input type="hidden" name="_csrf" value="<?= it.csrf ?>"/>
+
+  <div id="file-left-wrap">
+    <div class="upload-wrap">
+      <label class="browse-label" for="upload" class="file1" >Banner</label>
+      <span id="banner-path" class="file-path">No file chosen</span>
+      <input class="file-input" type="file" name="banner"/>
+    </div>
+
+    <?= it.show_form_err([ 'photo_name', 'photo_size' ], '<p class="tip">1024x406 .jpg</p>' ) ?>
+  </div>
+
+  <input id="confirm-btn" type="submit" value="Upload" />
+  <a id="cancel-link" href="/admin" title="Back to previous page">Cancel</a>
+</form>
+
+<?= it.partial( 'admin/home/_index' ) ?>

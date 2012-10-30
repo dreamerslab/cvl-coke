@@ -1,0 +1,14 @@
+<? var selected_prefix = '-selected'; ?>
+<? it.admin_nav_prefix = '/admin/film/' + it.current_page + '/'; ?>
+
+<div id="admin-nav">
+  <a id="add-btn<?= it.selected( 'new', it.admin_nav_selected, selected_prefix ) ?>" class="admin-nav-link" href="<?= it.admin_nav_prefix ?>new" title="Add new photo">Add</a>
+  <a id="edit-btn<?= it.selected( 'edit', it.admin_nav_selected, selected_prefix ) ?>" class="admin-nav-link" href="<?= it.admin_nav_prefix ?>edit" title="Edit this page">Edit</a>
+  <a id="destroy-btn<?= it.selected( 'del_confirm', it.admin_nav_selected, selected_prefix ) ?>" href="<?= it.admin_nav_prefix ?>delete" title="Delete">Delete</a>
+
+  <form class="admin-nav-btn" action="/admin/sessions" method="POST" accept-charset="UTF-8" >
+    <input type="hidden" name="_method" value="delete" />
+    <input type="hidden" name="_csrf" value="<?= it.csrf ?>" />
+    <input id="logout-btn" type="submit" value="Logout" />
+  </form>
+</div>

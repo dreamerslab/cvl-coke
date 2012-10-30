@@ -1,0 +1,28 @@
+<div id="gallery">
+  <h2 id="gallery-title">Gallery</h2>
+  <div id="film-nav">
+    <img id="film-side-bg" src="/img/admin/default-film-img-s.png" alt="Please upload a cover">
+    <? if( it.video ){ ?>
+      <video id="film-video" controls>
+        <source src="<?= CONF.static_host + it.video.url1 ?>" type="video/mp4">
+        <source src="<?= CONF.static_host + it.video.url2 ?>" type="video/webm">
+      </video>
+    <? }else{ ?>
+      <img id="film-video" src="/img/admin/default-film-img-c.png" alt="Please upload a film">
+    <? } ?>
+    <ul id="thumbnails">
+      <? it.covers.forEach( function ( cover ){ ?>
+        <li>
+          <a class="thumb-item" href="/admin/film/<?= cover.page ?>" title="Click to switch films">
+            <img class="thumb-img" src="<?= CONF.static_host + cover.url ?>" alt="Film Cover"/>
+          </a>
+        </li>
+      <? }); ?>
+    </ul>
+
+    <?= it.film_pre_pager(  it.current_page, '/admin/film' ) ?>
+    <?= it.film_next_pager( it.current_page, '/admin/film', it.current_pages ) ?>
+
+    <?= it.partial( 'admin/film/_panel' ) ?>
+  </div>
+</div>

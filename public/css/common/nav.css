@@ -1,0 +1,243 @@
+/* line 29, ../../../app/sass/common/nav.sass */
+#nav {
+  position: absolute;
+  top: 406px;
+  left: 0;
+  width: 1024px;
+  height: 361px;
+  text-align: center;
+  z-index: 2;
+  background: url("/img/common/nav-bg.jpg");
+}
+
+/* line 39, ../../../app/sass/common/nav.sass */
+#artists {
+  position: absolute;
+  width: 263px;
+  top: 33px;
+  left: 0;
+}
+
+/* line 42, ../../../app/sass/common/nav.sass */
+#photographer {
+  position: absolute;
+  width: 498px;
+  top: 33px;
+  left: 263px;
+}
+
+/* line 45, ../../../app/sass/common/nav.sass */
+#casting {
+  position: absolute;
+  width: 263px;
+  top: 33px;
+  left: 761px;
+}
+
+/* line 48, ../../../app/sass/common/nav.sass */
+#fashion {
+  position: absolute;
+  width: 263px;
+  top: 137px;
+  left: 0;
+}
+
+/* line 51, ../../../app/sass/common/nav.sass */
+#film {
+  position: absolute;
+  width: 263px;
+  top: 137px;
+  left: 761px;
+}
+
+/* line 54, ../../../app/sass/common/nav.sass */
+#fashion-title {
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 61px;
+  height: 16px;
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 -754px;
+}
+
+/* line 57, ../../../app/sass/common/nav.sass */
+#photographer-title {
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 106px;
+  height: 19px;
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 -987px;
+}
+
+/* line 60, ../../../app/sass/common/nav.sass */
+#casting-title {
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 58px;
+  height: 21px;
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 -559px;
+}
+
+/* line 63, ../../../app/sass/common/nav.sass */
+#artists-title {
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 51px;
+  height: 14px;
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 -87px;
+}
+
+/* line 66, ../../../app/sass/common/nav.sass */
+#film-title {
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 34px;
+  height: 17px;
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 -850px;
+}
+
+/* line 69, ../../../app/sass/common/nav.sass */
+#fashion-subtitle {
+  margin: 12px auto;
+  display: block;
+  text-indent: -9999px;
+  width: 96px;
+  height: 13px;
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 -741px;
+}
+
+/* line 72, ../../../app/sass/common/nav.sass */
+#casting-subtitle {
+  margin: 12px auto;
+  display: block;
+  text-indent: -9999px;
+  width: 145px;
+  height: 13px;
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 -546px;
+}
+
+/* line 75, ../../../app/sass/common/nav.sass */
+#artists-subtitle {
+  margin: 12px auto;
+  display: block;
+  text-indent: -9999px;
+  width: 124px;
+  height: 13px;
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 -74px;
+}
+
+/* line 78, ../../../app/sass/common/nav.sass */
+#film-subtitle {
+  margin: 12px auto;
+  display: block;
+  text-indent: -9999px;
+  width: 145px;
+  height: 13px;
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 -837px;
+}
+
+/* line 81, ../../../app/sass/common/nav.sass */
+#fashion-subtitle:hover, #fashion-subtitle.selected {
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 -728px;
+}
+
+/* line 84, ../../../app/sass/common/nav.sass */
+#casting-subtitle:hover, #casting-subtitle.selected {
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 -533px;
+}
+
+/* line 87, ../../../app/sass/common/nav.sass */
+#artists-subtitle:hover, #artists-subtitle.selected {
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 -61px;
+}
+
+/* line 90, ../../../app/sass/common/nav.sass */
+#film-subtitle:hover, #film-subtitle.selected {
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 -824px;
+}
+
+/* line 93, ../../../app/sass/common/nav.sass */
+#photographer-subtitle {
+  padding: 11px 0 0;
+}
+/* line 96, ../../../app/sass/common/nav.sass */
+#photographer-subtitle li, #photographer-subtitle h3 {
+  display: inline;
+}
+
+/* line 99, ../../../app/sass/common/nav.sass */
+#loki-tsai {
+  margin: 0 9px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  text-indent: -9999px;
+  width: 56px;
+  height: 10px;
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 -901px;
+}
+
+/* line 102, ../../../app/sass/common/nav.sass */
+#minshi-jiang {
+  margin: 0 9px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  text-indent: -9999px;
+  width: 80px;
+  height: 11px;
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 -922px;
+}
+
+/* line 105, ../../../app/sass/common/nav.sass */
+#jack-wang {
+  margin: 0 9px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  text-indent: -9999px;
+  width: 71px;
+  height: 12px;
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 -879px;
+}
+
+/* line 108, ../../../app/sass/common/nav.sass */
+#loki-tsai:hover, #loki-tsai.selected {
+  margin: 0 9px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  text-indent: -9999px;
+  width: 56px;
+  height: 10px;
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 -891px;
+}
+
+/* line 111, ../../../app/sass/common/nav.sass */
+#minshi-jiang:hover, #minshi-jiang.selected {
+  margin: 0 9px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  text-indent: -9999px;
+  width: 80px;
+  height: 11px;
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 -911px;
+}
+
+/* line 114, ../../../app/sass/common/nav.sass */
+#jack-wang:hover, #jack-wang.selected {
+  margin: 0 9px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  text-indent: -9999px;
+  width: 71px;
+  height: 12px;
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 -867px;
+}

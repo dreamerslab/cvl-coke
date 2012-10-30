@@ -1,0 +1,10 @@
+<? it.title = 'Add A Film | Coverline'; ?>
+<? it.styles.push( 'admin-film-new-and-edit' ); ?>
+<? it.scripts.push( 'upload' ); ?>
+<? it.admin_nav_selected = 'new'; ?>
+
+<form id="admin-form" action="/admin/film/<?= it.current_page ?>" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
+  <?= it.partial( 'admin/film/_fields' ) ?>
+</form>
+
+<?= it.partial( 'admin/film/_show' ) ?>

@@ -1,0 +1,16 @@
+/* line 3, ../../../app/sass/common/header.sass */
+#header {
+  position: absolute;
+  z-index: 3;
+  top: 667px;
+  left: 461px;
+}
+
+/* line 9, ../../../app/sass/common/header.sass */
+#logo {
+  display: block;
+  text-indent: -9999px;
+  width: 106px;
+  height: 28px;
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 -679px;
+}

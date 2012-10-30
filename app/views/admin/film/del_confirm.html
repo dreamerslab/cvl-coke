@@ -1,0 +1,13 @@
+<? it.styles.push( 'admin-film-del-confirm' ); ?>
+<? it.admin_nav_selected = 'del_confirm'; ?>
+
+<form id="admin-form" action="/admin/film/<?= it.current_page ?>" method="POST" accept-charset="UTF-8" >
+  <h2 id="confirm-msg">Delete this page?</h2>
+  <input type="hidden" name="_method" value="delete" />
+  <input type="hidden" name="_csrf" value="<?= it.csrf ?>" />
+  <input id="confirm-btn" type="submit" value="Delete" />
+</form>
+
+<a id="cancel-link" href="/admin/film/<?= it.current_page ?>" title="Back to previous page">Cancel</a>
+
+<?= it.partial( 'admin/film/_show' ) ?>

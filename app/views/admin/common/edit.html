@@ -1,0 +1,10 @@
+<? it.styles.push( 'photographer' ); ?>
+<? it.styles.push( 'admin-new-and-edit' ); ?>
+<? it.scripts.push( 'upload' ); ?>
+
+<form id="admin-form" action="<?= it.url_prefix ?>" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
+  <input type="hidden" name="_method" value="put" />
+  <?= it.partial( 'admin/common/_fields' ) ?>
+</form>
+
+<?= it.partial( 'admin/common/_show' ) ?>

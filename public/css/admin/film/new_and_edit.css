@@ -1,0 +1,45 @@
+/* line 1, ../../../../app/sass/admin/film/new_and_edit.sass */
+#admin-form {
+  width: 760px;
+}
+
+/* line 4, ../../../../app/sass/admin/film/new_and_edit.sass */
+#file-mp4-wrap, #file-webm-wrap, #file-cover-wrap, #page-new-wrap {
+  position: absolute;
+  z-index: 3;
+}
+
+/* line 8, ../../../../app/sass/admin/film/new_and_edit.sass */
+#file-mp4-wrap {
+  top: 5px;
+  left: 5px;
+}
+
+/* line 12, ../../../../app/sass/admin/film/new_and_edit.sass */
+#file-webm-wrap {
+  top: 5px;
+  left: 256px;
+}
+
+/* line 16, ../../../../app/sass/admin/film/new_and_edit.sass */
+#file-cover-wrap {
+  top: 5px;
+  left: 512px;
+}
+
+/* line 20, ../../../../app/sass/admin/film/new_and_edit.sass */
+#page-new-wrap {
+  top: 63px;
+  left: 5px;
+}
+
+/* line 24, ../../../../app/sass/admin/film/new_and_edit.sass */
+.format-tip {
+  position: relative;
+  left: 5px;
+}
+
+/* line 28, ../../../../app/sass/admin/film/new_and_edit.sass */
+#confirm-btn, #cancel-link {
+  left: 712px;
+}

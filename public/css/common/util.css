@@ -1,0 +1,56 @@
+/* line 3, ../../../app/sass/common/util.sass */
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 7, ../../../app/sass/common/util.sass */
+.align-c {
+  text-align: center;
+}
+
+/* line 10, ../../../app/sass/common/util.sass */
+.align-r {
+  text-align: right;
+}
+
+/* line 13, ../../../app/sass/common/util.sass */
+.float-l {
+  float: left;
+  display: inline;
+}
+
+/* line 16, ../../../app/sass/common/util.sass */
+.float-r {
+  float: right;
+  display: inline;
+}
+
+/* line 20, ../../../app/sass/common/util.sass */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 27, ../../../app/sass/common/util.sass */
+.clearfix {
+  display: inline-block;
+}
+
+/* line 31, ../../../app/sass/common/util.sass */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 34, ../../../app/sass/common/util.sass */
+.clearfix {
+  display: block;
+}
+
+/* line 37, ../../../app/sass/common/util.sass */
+.hidden {
+  display: none;
+}

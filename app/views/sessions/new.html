@@ -1,0 +1,27 @@
+<? it.styles.push( 'sessions' ); ?>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Login | Coverline</title>
+    <?= it.css( it.styles ) ?>
+  </head>
+  <body>
+    <div id="floater"></div>
+    <div id="wrap">
+      <h1 id="logo">Coverline</h1>
+      <h2 id="login-title">ADMIN PANEL</h2>
+      <form id="login-form" action="/admin/sessions" method="POST" accept-charset="UTF-8" >
+        <input type="hidden" name="_csrf" value="<?= it.csrf ?>" />
+        <input id="password" type="password" name="password" placeholder="Password">
+        <input id="login-btn" type="submit" value="Log in" />
+
+        <? it.exist( it.login_err, function (){ ?>
+          <p class="error"><?= it.login_err ?></p>
+        <? }); ?>
+      </form>
+    </div>
+    <?= it.js( it.scripts ) ?>
+  </body>
+</html>

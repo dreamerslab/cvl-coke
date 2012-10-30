@@ -1,0 +1,34 @@
+<input type="hidden" name="_csrf" value="<?= it.csrf ?>"/>
+
+<div id="file-mp4-wrap">
+  <div class="upload-wrap">
+    <label class="browse-label" for="upload" class="file1" >.mp4</label>
+    <span id="banner-path" class="file-path">choose your video</span>
+    <input class="file-input" type="file" name="video1"/>
+  </div>
+  <?= it.show_form_err( 'video1', '<p class="tip">Fomrat must be mp4.</p>' ) ?>
+</div>
+<div id="file-webm-wrap">
+  <div class="upload-wrap">
+    <label class="browse-label" for="upload" class="file1" >.webm</label>
+    <span id="banner-path" class="file-path">choose your video</span>
+    <input class="file-input" type="file" name="video2"/>
+  </div>
+  <?= it.show_form_err( 'video2', '<p class="tip">Fomrat must be webm.</p>' ) ?>
+</div>
+<div id="file-cover-wrap">
+  <div class="upload-wrap">
+    <label class="browse-label" for="upload" class="file1" >.jpg</label>
+    <span id="banner-path" class="file-path">choose your photo</span>
+    <input class="file-input" type="file" name="cover"/>
+  </div>
+  <?= it.show_form_err([ 'cover', 'cover_size' ], '<p class="tip">263x134 .jpg</p>' ) ?>
+</div>
+
+<div id="page-new-wrap" >
+  <input id="page-new" type="text" name="target_page" value="<?= it.target_page ?>"/> of <?= it.current_pages ?>
+  <?= it.show_form_err( 'target_page' ) ?>
+</div>
+
+<input id="confirm-btn" type="submit" value="Upload" />
+<a id="cancel-link" href="/admin/film/<?= it.current_page ?>" title="Back to previous page">Cancel</a>

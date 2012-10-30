@@ -1,0 +1,16 @@
+/* line 1, ../../../app/sass/admin/del_confirm.sass */
+#admin-form {
+  width: 263px;
+}
+
+/* line 4, ../../../app/sass/admin/del_confirm.sass */
+#confirm-msg {
+  position: relative;
+  top: 7px;
+  left: 15px;
+}
+
+/* line 9, ../../../app/sass/admin/del_confirm.sass */
+#confirm-btn, #cancel-link {
+  left: 216px;
+}

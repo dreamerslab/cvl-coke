@@ -1,0 +1,75 @@
+---
+path:
+  output: assets
+  css: css
+  js: js
+
+# cdn setting
+asset_host:
+  # - http://assets1.example.com
+  # - http://assets2.example.com
+
+css:
+  # css group name
+  admin-show:
+    site:
+      - admin/base
+  admin-home-edit:
+    site:
+      - admin/base
+      - admin/home/edit
+  admin-new-and-edit:
+    site:
+      - admin/base
+      - admin/new_and_edit
+  admin-del-confirm:
+    site:
+      - admin/base
+      - admin/del_confirm
+  common:
+    site:
+      - common/reset
+      - common/util
+      - common/base
+      - common/header
+      - common/nav
+      - common/footer
+  error:
+    site:
+      - error
+  film:
+    site:
+      - film
+  admin-film:
+    site:
+      - film
+      - admin/base
+  admin-film-new-and-edit:
+    site:
+      - film
+      - admin/base
+      - admin/film/new_and_edit
+  admin-film-del-confirm:
+    site:
+      - film
+      - admin/base
+      - admin/film/del_confirm
+  photographer:
+    site:
+      - common/gallery_nav
+  contact:
+    site:
+      - contact
+  sessions:
+    site:
+      - sessions
+js:
+  # js group name
+  common:
+    cdn:
+      - https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js
+    site:
+      - common/ga
+  upload:
+    site:
+      - upload

@@ -1,0 +1,17 @@
+<? it.exist( it.photographers[ it.name ], function (){ ?>
+  <h2 id="gallery-title"><?= it.photographers[ it.name ].name ?></h2>
+  <p><?= it.photographers[ it.name ].desc ?></p>
+<? }); ?>
+
+<? it.exist( it.photo, function (){ ?>
+  <? it.exist( it.photo.url4, function (){ ?>
+    <a class="gallery-desc" title="Go to profile page." href=""
+      style="background : url( '<?= CONF.static_host + ( it.photo.url4 || '' ) ?>' );">
+      Profile link
+    </a>
+  <? }); ?>
+
+  <img id="first-gallery-img" src="<?= it.default_album_img( it.photo.url1, 's', CONF.static_host ); ?>" alt="<?= it.img_title( it.album_name, it.type, it.current_page, 1 ); ?>">
+  <img src="<?= it.default_album_img( it.photo.url2, 'c', CONF.static_host ); ?>" alt="<?= it.img_title( it.album_name, it.type, it.current_page, 2 ) ?>">
+  <img id="last-gallery-img" src="<?= it.default_album_img( it.photo.url3, 's', CONF.static_host ); ?>" alt="<?= it.img_title( it.album_name, it.type, it.current_page, 3 ); ?>">
+<? }); ?>

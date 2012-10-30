@@ -1,0 +1,14 @@
+<div id="gallery">
+  <h2 id="gallery-title">Gallery</h2>
+  <img src="<?= CONF.static_host + it.banner ?>" alt="Coverline">
+  <p>Our range of services include all aspects of production and executive production, with a specialization in location scouting casting and behind the scenes coordination.</p>
+</div>
+<div id="admin-nav">
+  <a id="edit-btn<?= it.selected( 'edit', it.admin_nav_selected, '-selected' ) ?>" class="admin-nav-link" href="/admin/edit" title="Edit this page">Edit</a>
+
+  <form class="admin-nav-btn" action="/admin/sessions" method="POST" accept-charset="UTF-8" >
+    <input type="hidden" name="_method" value="delete" />
+    <input type="hidden" name="_csrf" value="<?= it.csrf ?>" />
+    <input id="logout-btn" type="submit" value="Logout" />
+  </form>
+</div>

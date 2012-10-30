@@ -1,0 +1,73 @@
+/* line 4, ../../app/sass/film.sass */
+#film-side-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* line 9, ../../app/sass/film.sass */
+#film-nav {
+  margin: 0;
+}
+
+/* line 12, ../../app/sass/film.sass */
+.gallery-item {
+  display: inline;
+  float: left;
+  width: 1024px;
+}
+
+/* line 16, ../../app/sass/film.sass */
+#thumbnails {
+  position: relative;
+  float: left;
+  display: inline;
+  width: 264px;
+  height: 404px;
+  padding: 1px 0 0;
+}
+
+/* line 24, ../../app/sass/film.sass */
+#film-video {
+  display: inline;
+  float: left;
+  width: 760px;
+  height: 406px;
+}
+
+/* line 29, ../../app/sass/film.sass */
+.thumb-item {
+  display: block;
+}
+
+/* line 32, ../../app/sass/film.sass */
+.thumb-img {
+  display: block;
+  width: 263px;
+  height: 134px;
+  padding: 1px 0 0;
+}
+
+/* line 38, ../../app/sass/film.sass */
+#film-previous, #film-next {
+  position: absolute;
+  left: 760px;
+}
+
+/* line 42, ../../app/sass/film.sass */
+#film-previous {
+  top: 0px;
+  text-indent: -9999px;
+  width: 263px;
+  height: 27px;
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 -1033px;
+}
+
+/* line 46, ../../app/sass/film.sass */
+#film-next {
+  top: 379px;
+  text-indent: -9999px;
+  width: 263px;
+  height: 27px;
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 -1006px;
+}

@@ -1,0 +1,79 @@
+@import compass
+@import common/lib
+
+@mixin info( $name )
+  @include bg_text( 263px, 54px, $name )
+
+.gallery-desc
+  +hide-text
+  position: absolute
+  top: 0
+  right: 0
+  width: 263px
+  height: 54px
+
+#gallery
+  position: relative
+  img
+    float: left
+
+#first-gallery-img
+  border-right: 1px solid #000
+
+#last-gallery-img
+  border-left: 1px solid #000
+
+#gallery-nav
+  background: url( "/img/photographer/nav/photographer-nav-bg.png" ) no-repeat
+  width: 476px
+  height: 26px
+  padding: 9px 10px 0
+  font-size: 9px
+  position: absolute
+  left: 264px
+  bottom: 0
+
+#gallery-nav-pages
+  .selected
+    color: #fff
+    text-decoration: underline
+
+#photo-previous, #photo-next
+  position: absolute
+  bottom: 0px
+
+.nav-disable
+  opacity: 0.4
+  cursor: default
+
+#photo-previous
+  left: -264px
+  @include bg_text( 263px, 27px, photo-previous )
+
+#photo-next
+  right: -264px
+  @include bg_text( 263px, 27px, photo-next )
+
+$gallery-nav-color: #ccc
+
+.gallery-nav-item
+  float: left
+  padding: 2px 6px 0 0
+  color: $gallery-nav-color
+  &:hover
+    color: #fff
+    text-decoration: underline
+
+#gender-type
+  position: absolute
+  right: 25px
+  bottom: 1px
+  a
+    font-style: italic
+    color: $gallery-nav-color
+    &:hover, &.selected
+      color: #fff
+      text-decoration: underline
+
+#swith-seperator
+  margin: 0 5px

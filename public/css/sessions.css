@@ -1,0 +1,66 @@
+/* line 1, ../../app/sass/sessions.sass */
+#floater {
+  margin: 0 0 -85px;
+}
+
+/* line 6, ../../app/sass/sessions.sass */
+#wrap {
+  text-align: center;
+  clear: both;
+  position: static;
+  width: 162px;
+  height: 170px;
+  margin: 0 auto;
+}
+
+/* line 14, ../../app/sass/sessions.sass */
+#logo {
+  margin: 0 auto;
+}
+
+/* line 17, ../../app/sass/sessions.sass */
+#login-title {
+  font-size: 12px;
+  padding: 6px 0 0;
+  color: #e6e6e6;
+}
+
+/* line 22, ../../app/sass/sessions.sass */
+#login-form {
+  padding: 15px 0 0;
+}
+
+/* line 25, ../../app/sass/sessions.sass */
+#password {
+  background: none;
+  border: 1px solid white;
+  color: gray;
+  font-size: 12px;
+  display: block;
+  width: 155px;
+  height: 24px;
+  padding: 0 0 0 5px;
+}
+
+/* line 35, ../../app/sass/sessions.sass */
+#login-btn {
+  text-align: center;
+  background: none;
+  border: 1px solid white;
+  color: #e6e6e6;
+  display: block;
+  width: 162px;
+  height: 27px;
+  font-size: 13px;
+  margin: 12px 0 0;
+}
+
+/* line 46, ../../app/sass/sessions.sass */
+.error {
+  font-size: 13px;
+  border: 1px solid red;
+  color: red;
+  width: 160px;
+  height: 26px;
+  margin: 12px 0 0;
+}

@@ -1,0 +1,35 @@
+/* line 3, ../../../app/sass/admin/new_and_edit.sass */
+#file-left-wrap, #file-middle-wrap, #file-lower-right-wrap, #file-upper-right-wrap, #page-new-wrap {
+  position: absolute;
+  z-index: 3;
+}
+
+/* line 7, ../../../app/sass/admin/new_and_edit.sass */
+#file-left-wrap {
+  top: 13px;
+  left: 13px;
+}
+
+/* line 11, ../../../app/sass/admin/new_and_edit.sass */
+#file-middle-wrap {
+  top: 13px;
+  left: 277px;
+}
+
+/* line 15, ../../../app/sass/admin/new_and_edit.sass */
+#file-lower-right-wrap {
+  top: 13px;
+  left: 773px;
+}
+
+/* line 19, ../../../app/sass/admin/new_and_edit.sass */
+#file-upper-right-wrap {
+  top: 70px;
+  left: 773px;
+}
+
+/* line 23, ../../../app/sass/admin/new_and_edit.sass */
+#page-new-wrap {
+  top: 70px;
+  left: 13px;
+}

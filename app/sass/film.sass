@@ -1,0 +1,48 @@
+@import compass
+@import common/lib
+
+#film-side-bg
+  position: absolute
+  top: 0
+  right: 0
+
+#film-nav
+  margin: 0
+
+.gallery-item
+  +float-left
+  width: 1024px
+
+#thumbnails
+  position: relative
+  float: left
+  display: inline
+  width: 264px
+  height: 404px
+  padding: 1px 0 0
+
+#film-video
+  +float-left
+  width: 760px
+  height: 406px
+
+.thumb-item
+  display: block
+
+.thumb-img
+  display: block
+  width: 263px
+  height: 134px
+  padding: 1px 0 0
+
+#film-previous, #film-next
+  position: absolute
+  left: 760px
+
+#film-previous
+  top: 0px
+  @include bg_text( 263px, 27px, video-previous )
+
+#film-next
+  top: 379px
+  @include bg_text( 263px, 27px, video-next )

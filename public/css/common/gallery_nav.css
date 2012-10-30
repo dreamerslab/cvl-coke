@@ -1,0 +1,112 @@
+/* line 7, ../../../app/sass/common/gallery_nav.sass */
+.gallery-desc {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 263px;
+  height: 54px;
+}
+
+/* line 15, ../../../app/sass/common/gallery_nav.sass */
+#gallery {
+  position: relative;
+}
+/* line 17, ../../../app/sass/common/gallery_nav.sass */
+#gallery img {
+  float: left;
+}
+
+/* line 20, ../../../app/sass/common/gallery_nav.sass */
+#first-gallery-img {
+  border-right: 1px solid black;
+}
+
+/* line 23, ../../../app/sass/common/gallery_nav.sass */
+#last-gallery-img {
+  border-left: 1px solid black;
+}
+
+/* line 26, ../../../app/sass/common/gallery_nav.sass */
+#gallery-nav {
+  background: url("/img/photographer/nav/photographer-nav-bg.png") no-repeat;
+  width: 476px;
+  height: 26px;
+  padding: 9px 10px 0;
+  font-size: 9px;
+  position: absolute;
+  left: 264px;
+  bottom: 0;
+}
+
+/* line 37, ../../../app/sass/common/gallery_nav.sass */
+#gallery-nav-pages .selected {
+  color: white;
+  text-decoration: underline;
+}
+
+/* line 41, ../../../app/sass/common/gallery_nav.sass */
+#photo-previous, #photo-next {
+  position: absolute;
+  bottom: 0px;
+}
+
+/* line 45, ../../../app/sass/common/gallery_nav.sass */
+.nav-disable {
+  opacity: 0.4;
+  cursor: default;
+}
+
+/* line 49, ../../../app/sass/common/gallery_nav.sass */
+#photo-previous {
+  left: -264px;
+  text-indent: -9999px;
+  width: 263px;
+  height: 27px;
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 -960px;
+}
+
+/* line 53, ../../../app/sass/common/gallery_nav.sass */
+#photo-next {
+  right: -264px;
+  text-indent: -9999px;
+  width: 263px;
+  height: 27px;
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 -933px;
+}
+
+/* line 59, ../../../app/sass/common/gallery_nav.sass */
+.gallery-nav-item {
+  float: left;
+  padding: 2px 6px 0 0;
+  color: #cccccc;
+}
+/* line 63, ../../../app/sass/common/gallery_nav.sass */
+.gallery-nav-item:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* line 67, ../../../app/sass/common/gallery_nav.sass */
+#gender-type {
+  position: absolute;
+  right: 25px;
+  bottom: 1px;
+}
+/* line 71, ../../../app/sass/common/gallery_nav.sass */
+#gender-type a {
+  font-style: italic;
+  color: #cccccc;
+}
+/* line 74, ../../../app/sass/common/gallery_nav.sass */
+#gender-type a:hover, #gender-type a.selected {
+  color: white;
+  text-decoration: underline;
+}
+
+/* line 78, ../../../app/sass/common/gallery_nav.sass */
+#swith-seperator {
+  margin: 0 5px;
+}

@@ -1,0 +1,38 @@
+/* line 4, ../../../app/sass/common/footer.sass */
+#footer {
+  position: absolute;
+  z-index: 2;
+  top: 587px;
+  left: 261px;
+  width: 498px;
+}
+/* line 10, ../../../app/sass/common/footer.sass */
+#footer p {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+}
+
+/* line 13, ../../../app/sass/common/footer.sass */
+#address {
+  width: 213px;
+  height: 45px;
+  margin-left: -106.5px;
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 0;
+  position: absolute;
+  left: 50%;
+  top: -44px;
+}
+
+/* line 22, ../../../app/sass/common/footer.sass */
+#contact-us {
+  display: block;
+  text-indent: -9999px;
+  width: 25px;
+  height: 8px;
+  margin-left: -13.5px;
+  position: absolute;
+  left: 51%;
+  top: 132px;
+  background: url('/img/sprite-s8fd68d1af6.png') no-repeat 0 -45px;
+}

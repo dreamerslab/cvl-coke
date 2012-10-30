@@ -1,0 +1,35 @@
+<? it.styles.push( 'contact' ); ?>
+
+<div id="contact">
+  <div id="contact-wrap">
+    <h2 id="contact-title">Contact CVL</h2>
+    <p id="contact-info">
+      <?= it.heading ?>
+    </p>
+  </div>
+  <div id="contact-form-wrap">
+    <form action="/contact" method="POST" accept-charset="utf-8" id="contact-form">
+      <input type="hidden" name="_csrf" value="<?= it.csrf ?>">
+      <input type="hidden" name="url" value="<?= it.url ?>">
+      <div id="corp" class="form-row">
+        <label id="corp-title">Coverline</label>
+        <label id="corp-email">inquiry@coverline.com.tw</label>
+      </div>
+      <div class="form-row">
+        <label id="contact-email" for="email">Email address*</label>
+        <input name="email" value="<?= it.user ? it.user.email : '' ?>" class="contact-input">
+        <?= it.err ? it.show_err( it.err.email ) : '' ?>
+      </div>
+      <div class="form-row">
+        <label id="contact-name" for="name">Your name*</label>
+        <input name="name" value="<?= it.user ? it.user.name : '' ?>" class="contact-input">
+        <?= it.err ? it.show_err( it.err.name ) : '' ?>
+      </div>
+      <div class="form-row">
+        <input id="send" type="image" src="/img/contact/send.png" />
+        <textarea id="msg" name="msg" cols="30" rows="10"><?= it.user ? it.user.msg : '' ?></textarea>
+        <?= it.err ? it.show_err( it.err.msg ) : '' ?>
+      </div>
+    </form>
+  </div>
+</div>

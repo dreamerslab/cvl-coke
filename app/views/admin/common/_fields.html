@@ -1,0 +1,42 @@
+<input type="hidden" name="_csrf" value="<?= it.csrf ?>"/>
+
+<div id="file-left-wrap">
+  <div class="upload-wrap">
+    <label class="browse-label" for="upload" class="file1" >Left</label>
+    <span id="banner-path" class="file-path">No file chosen</span>
+    <input class="file-input" type="file" name="photo1"/>
+  </div>
+  <?= it.show_form_err([ 'photo1_name', 'photo1_size' ], '<p class="tip">263x406 .jpg</p>' ) ?>
+</div>
+<div id="file-middle-wrap">
+  <div class="upload-wrap">
+    <label class="browse-label" for="upload" class="file1" >Center</label>
+    <span id="banner-path" class="file-path">No file chosen</span>
+    <input class="file-input" type="file" name="photo2"/>
+  </div>
+  <?= it.show_form_err([ 'photo2_name', 'photo2_size' ], '<p class="tip">496x406 .jpg</p>' ) ?>
+</div>
+<div id="file-lower-right-wrap">
+  <div class="upload-wrap">
+    <label class="browse-label" for="upload" class="file1" >Right</label>
+    <span id="banner-path" class="file-path">No file chosen</span>
+    <input class="file-input" type="file" name="photo3"/>
+  </div>
+  <?= it.show_form_err([ 'photo3_name', 'photo3_size' ], '<p class="tip">263x406 .jpg</p>' ) ?>
+</div>
+<div id="file-upper-right-wrap">
+  <div class="upload-wrap">
+    <label class="browse-label" for="upload" class="file1" >Overlay</label>
+    <span id="banner-path" class="file-path">No file chosen</span>
+    <input class="file-input" type="file" name="photo4"/>
+  </div>
+  <?= it.show_form_err([ 'photo4_name', 'photo4_size' ], '<p class="tip">263x54 .png</p>' ) ?>
+</div>
+
+<div id="page-new-wrap" >
+  <input id="page-new" type="text" name="target_page" value="<?= it.target_page ?>"/> of <?= it.current_pages ?>
+  <?= it.show_form_err( 'target_page' ) ?>
+</div>
+
+<input id="confirm-btn" type="submit" value="Upload" />
+<a id="cancel-link" href="<?= it.url_prefix ?>" title="Back to previous page">Cancel</a>

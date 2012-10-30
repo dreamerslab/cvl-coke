@@ -1,0 +1,13 @@
+<? it.styles.push( 'photographer' ); ?>
+<? it.styles.push( 'admin-del-confirm' ); ?>
+
+<form id="admin-form" action="<?= it.url_prefix ?>" method="POST" accept-charset="UTF-8" >
+  <h2 id="confirm-msg">Delete this page?</h2>
+  <input type="hidden" name="_method" value="delete" />
+  <input type="hidden" name="_csrf" value="<?= it.csrf ?>" />
+  <input id="confirm-btn" type="submit" value="Delete" />
+</form>
+
+<a id="cancel-link" href="<?= it.url_prefix ?>" title="Back to previous page">Cancel</a>
+
+<?= it.partial( 'admin/common/_show' ) ?>

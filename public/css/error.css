@@ -1,0 +1,23 @@
+/* line 1, ../../app/sass/error.sass */
+#floater {
+  margin: 0 0 -56px;
+}
+
+/* line 4, ../../app/sass/error.sass */
+#wrap {
+  clear: both;
+  position: relative;
+  text-align: center;
+  width: 300px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+/* line 12, ../../app/sass/error.sass */
+#homepage-link {
+  display: block;
+  border: 1px solid white;
+  width: 200px;
+  height: 24px;
+  margin: 32px auto 0;
+}
