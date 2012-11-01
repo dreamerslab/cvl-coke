@@ -34,8 +34,8 @@ module.exports = Controller.extend( validate, {
     var controller   = res.local( 'controller' );
     var name         = req.form.name;
     var tmp          = name ? [ controller, name ] : [ controller ];
-    var album_prefix = tmp.slice( 0 );
-    var album_name   = tmp.slice( 0 );
+    var album_prefix = tmp.slice( 0 ); // clone array
+    var album_name   = tmp.slice( 0 ); // clone array
 
     album_name.push( req.form.type );
     res.locals({

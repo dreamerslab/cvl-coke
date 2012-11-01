@@ -6,14 +6,13 @@ module.exports = Controller.extend({
 //--- before filters -----------------------------------------------------------
 
   locals : function ( req, res, next ){
+    var type     = req.form.type;
     var keywords = [
-      'Coverline',
-      'fashion',
-      req.form.type
+      'Coverline fashion', 'fashion', 'fashion ' + type
     ].join( ', ' );
 
     res.locals({
-      title       : 'Fashion - ' + req.form.type + ' | Coverline',
+      title       : 'Fashion - ' + type + ' | Coverline',
       controller  : 'fashion',
       types       : [ 'beauty', 'the-stylist' ],
       keywords    : keywords,

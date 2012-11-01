@@ -9,15 +9,17 @@ module.exports = Controller.extend( validate, {
   locals : function ( req, res, next ){
     var photographer = res.local( 'photographers' )[ req.form.name ].name;
     var type         = req.form.type;
-    var keywords     = [
-      'Coverline',
-      'photographer',
-      photographer,
-      req.form.type
+
+    var title = [
+      'Photographer -', photographer, '-', type, ' | Coverline'
+    ].join( ' ' );
+
+    var keywords = [
+      'Coverline photographer', photographer, type
     ].join( ', ' );
 
     res.locals({
-      title       : [ 'Photographer -', photographer, '-', type, '| Coverline' ].join( ' ' ),
+      title       : title,
       controller  : 'photographer',
       types       : [ 'homme', 'femme' ],
       keywords    : keywords,

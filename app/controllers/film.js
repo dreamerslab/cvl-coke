@@ -126,16 +126,11 @@ module.exports = Controller.extend( validate, {
         self.no_content( res );
       },
       function ( video ){
-        var keywords = [
-          'Coverline',
-          'film'
-        ].join( ', ' );
-
         res.render( 'film/show', {
           title        : 'Film | Coverline',
           album_prefix : 'film',
           video        : video,
-          keywords     : keywords,
+          keywords     : [ 'Coverline film', 'film' ].join( ', ' ),
           description  : lang.heading.default
         });
       });
