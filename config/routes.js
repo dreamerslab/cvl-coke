@@ -27,8 +27,8 @@ module.exports = function ( map ){
     admin.get(    'casting/:type/:page/edit',    'casting#edit' );
     admin.post(   'casting/:type/:page/',        'casting#create' );
     admin.put(    'casting/:type/:page/',        'casting#update' );
-    admin.get(    'casting/:type/:page/delete', 'casting#del_confirm' );
-    admin.delete( 'casting/:type/:page/',            'casting#destroy' );
+    admin.get(    'casting/:type/:page/delete',  'casting#del_confirm' );
+    admin.delete( 'casting/:type/:page/',        'casting#destroy' );
 
     admin.get(    'fashion/:type/:page',        'fashion#show' );
     admin.get(    'fashion/:type/:page/new',    'fashion#new' );
