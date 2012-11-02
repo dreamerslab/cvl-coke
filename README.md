@@ -1,3 +1,3 @@
-# cvl
+# COVERLINE Official Website
 
-Start writing your project description here :)
+All rights reserved for the application code
